@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Peripherals Board", "index.html", ]
+  [ "Peripherals Board (changed)", "index.html", ]
 ];
 
 var NAVTREEINDEX =
