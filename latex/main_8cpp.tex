@@ -1,0 +1,83 @@
+\doxysection{D\+:/\+Projects/\+Ctrl-\/\+Alt-\/\+Defeat-\/\+WRO-\/\+Future-\/\+Engineers-\/2025/sw/peripherals-\/board/src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{D:/Projects/Ctrl-\/Alt-\/Defeat-\/WRO-\/Future-\/Engineers-\/2025/sw/peripherals-\/board/src/main.cpp@{D:/Projects/Ctrl-\/Alt-\/Defeat-\/WRO-\/Future-\/Engineers-\/2025/sw/peripherals-\/board/src/main.cpp}}
+
+
+Initialises drivers and managers, handles interaction between managers.  
+
+
+{\ttfamily \#include "{}Arduino.\+h"{}}\newline
+{\ttfamily \#include $<$driverconfig.\+hpp$>$}\newline
+{\ttfamily \#include $<$Sensor\+Manager.\+hpp$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_ab20d23c8119fc4e9099128ed286ba39a}\label{main_8cpp_ab20d23c8119fc4e9099128ed286ba39a} 
+VEHICLE\+\_\+\+DRIVER\+\_\+\+IMU {\bfseries bno} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_aa012285abd7e9846a0867902479c31ea}\label{main_8cpp_aa012285abd7e9846a0867902479c31ea} 
+VEHICLE\+\_\+\+DRIVER\+\_\+\+LIDAR {\bfseries lidar} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_a02ddf93d58b9b0f695ccd686654f4fac}\label{main_8cpp_a02ddf93d58b9b0f695ccd686654f4fac} 
+VEHICLE\+\_\+\+DRIVER\+\_\+\+SPEED {\bfseries speed} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_a5e8ac0b51f3bdb7ed94f30045c605856}\label{main_8cpp_a5e8ac0b51f3bdb7ed94f30045c605856} 
+VEHICLE\+\_\+\+DRIVER\+\_\+\+MOTOR {\bfseries motor} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_a44f025666f2933b734177d454ec69b5b}\label{main_8cpp_a44f025666f2933b734177d454ec69b5b} 
+VEHICLE\+\_\+\+DRIVER\+\_\+\+STEERING {\bfseries steering} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_a4e1e0a23bf5a62a147ea7e382e6bbe94}\label{main_8cpp_a4e1e0a23bf5a62a147ea7e382e6bbe94} 
+VEHICLE\+\_\+\+DRIVER\+\_\+\+TARGET\+\_\+\+CONTROL {\bfseries target\+Control} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_a3e42ed5f6b4487f7b84a5f570db76782}\label{main_8cpp_a3e42ed5f6b4487f7b84a5f570db76782} 
+VEHICLE\+\_\+\+DRIVER\+\_\+\+DRIVE\+\_\+\+ALGORITHM {\bfseries drive\+Algorithm} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_a5f02a75c7995b2d40ef3a4f7ccd5dd01}\label{main_8cpp_a5f02a75c7995b2d40ef3a4f7ccd5dd01} 
+Sensor\+Manager {\bfseries sensor\+Manager} (VEHICLE\+\_\+\+GET\+\_\+\+CONFIG)
+\item 
+\Hypertarget{main_8cpp_a6c2125110f2334208c1589f352007ed5}\label{main_8cpp_a6c2125110f2334208c1589f352007ed5} 
+void {\bfseries debug\+Print\+Vehicle\+Data} (Vehicle\+Data data)
+\item 
+void \mbox{\hyperlink{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Initialises sensor manager, target controller, and drive algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\begin{DoxyCompactList}\small\item\em Reads data from sensors, passes drive commands from drive algorithm to target controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Initialises drivers and managers, handles interaction between managers. 
+
+\begin{DoxyAuthor}{Author}
+DIY Labs 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_afe461d27b9c48d5921c00d521181f12f}\index{main.cpp@{main.cpp}!loop@{loop}}
+\index{loop@{loop}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \label{main_8cpp_afe461d27b9c48d5921c00d521181f12f} 
+void loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads data from sensors, passes drive commands from drive algorithm to target controller. 
+
+\begin{DoxyAuthor}{Author}
+DIY Labs 
+\end{DoxyAuthor}
+\Hypertarget{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d}\index{main.cpp@{main.cpp}!setup@{setup}}
+\index{setup@{setup}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d} 
+void setup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initialises sensor manager, target controller, and drive algorithm. 
+
+\begin{DoxyAuthor}{Author}
+DIY Labs 
+\end{DoxyAuthor}

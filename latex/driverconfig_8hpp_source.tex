@@ -1,0 +1,35 @@
+\doxysection{driverconfig.\+hpp}
+\hypertarget{driverconfig_8hpp_source}{}\label{driverconfig_8hpp_source}\index{D:/Projects/Ctrl-\/Alt-\/Defeat-\/WRO-\/Future-\/Engineers-\/2025/sw/peripherals-\/board/src/driverconfig.hpp@{D:/Projects/Ctrl-\/Alt-\/Defeat-\/WRO-\/Future-\/Engineers-\/2025/sw/peripherals-\/board/src/driverconfig.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#if\ defined(VEHICLE\_DRIVERSET\_HWREV1)}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <hwrev1\_includes.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_MOTOR\ hw\_rev\_1\_MotorDriver}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_STEERING\ hw\_rev\_1\_SteeringDriver}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_TARGET\_CONTROL\ hw\_rev\_1\_TargetControl}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ VEHICLE\_GET\_CONFIG\ hwrev1\_getConfig()}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#elif\ defined(VEHICLE\_DRIVERSET\_HWREV2)}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <hwrev2\_includes.h>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_IMU\ hw\_rev\_2\_imu}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_LIDAR\ hw\_rev\_2\_lidar}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_SPEED\ hw\_rev\_2\_VehicleSpeed}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_MOTOR\ hw\_rev\_2\_MotorDriver}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_STEERING\ hw\_rev\_2\_SteeringDriver}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_TARGET\_CONTROL\ hw\_rev\_2\_TargetControl}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ VEHICLE\_GET\_CONFIG\ hwrev2\_getConfig()}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#if\ defined(SINGLE\_LIDAR\_OPEN\_ROUND)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ VEHICLE\_DRIVER\_DRIVE\_ALGORITHM\ hw\_rev\_2\_SingleLidarOpenRound}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
